@@ -34,17 +34,17 @@ const Contact = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className="flex flex-col flex-1 w-full gap-6 mx-auto"
-            action="https://formspree.io/f/{form_id}" method="POST"
+            action="https://formspree.io/f/xgejeyzp" method="POST"
           >
           {/* go to https://formspree.io/ and setup an account */}
              
             {/* input & group */}
             <div className="flex w-full gap-x-6">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input type="text" placeholder="name" className="input" name="Name" required />
+              <input type="text" placeholder="email" className="input" name="Email"  required/>
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
+            <input type="text" placeholder="subject" className="input" name="Subject" required/>
+            <textarea placeholder="message" className="textarea" name="Message" required></textarea>
             <button type="submit" className="border rounded-full btn border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
