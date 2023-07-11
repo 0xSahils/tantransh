@@ -4,7 +4,7 @@ import Image from "next/image";
 
 //next link
 
-import Link from "next/Link";
+import Link from "next/link";
 
 //components
 
