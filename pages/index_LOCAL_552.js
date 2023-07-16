@@ -97,7 +97,6 @@
 // next head
 import Head from 'next/head';
 
-<<<<<<< HEAD
 // next image
 import Image from 'next/image';
 
@@ -111,20 +110,6 @@ import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../variants';
-=======
-//components
-import ParticlesContainer from "../components/ParticlesContainer";
-import ProjectsBtn from "../components/ProjectsBtn";
-import Avatar from "../components/Avatar";
-
-//framer motion
-
-import { motion } from "framer-motion";
-
-//variants
-
-import { fadeIn } from "../variants";
->>>>>>> 5741baea7f97a4c0634452512f6f04160f7183e1
 
 const Home = () => {
   return (
