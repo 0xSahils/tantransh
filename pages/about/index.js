@@ -138,7 +138,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0"
           >
-            HackXLR8 is a National level hackathon,conducted by Robotics CLub of IET Lucknow in collaboration Incubation Center and E-Cell,IET Lucknow. With a prize pool of 1.05 Lakh, you'll get one to experiance the most engaging and fun coding ride. <br/>
+            HackXLR8 is a National level hackathon,conducted by Robotics CLub of IET Lucknow in collaboration Incubation Center and E-Cell,IET Lucknow. With a prize pool of 1.05 Lakh, you will get one to experiance the most engaging and fun coding ride. <br/>
             <a href="www.googgle.com" color="blue" target="_blank" className="transition rounded-lg shadow-md cursor-pointer hover:text-accent">Register Now !</a>
           </motion.p>
           {/*counters*/}
