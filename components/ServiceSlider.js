@@ -23,28 +23,28 @@ import { FreeMode, Pagination } from "swiper";
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: "Phase 1 Pre",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Journey of Innovation Begins",
+    description: "Embark on a journey of creativity and collaboration with Hack-XLR8, an unparalleled opportunity for aspiring innovators.",
   },
   {
     icon: <RxPencil2 />,
-    title: "Phase 1 post",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Phase 1 postPushing Boundaries Together",
+    description: "This roadmap outlines an exhilarating path that pushes boundaries, fosters ingenious ideas, and unites sharp minds.",
   },
   {
     icon: <RxDesktop />,
-    title: "Phase 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Brilliance through Online Submissions",
+    description: "The format spans two stages, offering participants a chance to showcase brilliance through online submissions.",
   },
   {
     icon: <RxReader />,
-    title: "Phase 2 Final",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Thrilling 24-Hour Hackathon Finale",
+    description: "The journey culminates in a thrilling 24-hour offline round, where innovation knows no bounds.",
   },
   {
     icon: <RxRocket />,
-    title: "Whats Next",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Transforming the Future with Hack-XLR8",
+    description: "Join us to set the stage for a hackathon experience where the future is ready to be transformed.",
   },
 ];
 

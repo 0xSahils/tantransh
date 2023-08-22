@@ -30,8 +30,7 @@ const Work = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-              blandit magna. Ut sed molestie justo.
+              We extend our heartfelt gratitude to our esteemed sponsors whose support has ignited the flames of innovation. Their commitment to pushing boundaries and fostering creativity has made this event possible.
             </motion.p>
           </div>
           {/*slider*/}

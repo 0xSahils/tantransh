@@ -1,5 +1,6 @@
 //components
 import ServiceSlider from "../../components/ServiceSlider";
+import Swiper from "swiper";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 
@@ -7,8 +8,11 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+
+
 const Services = () => {
   return (
+  
     <div className="flex items-center h-full bg-primary/30 py-36">
       <Circles />
       <div className="container mx-auto">
@@ -45,6 +49,7 @@ const Services = () => {
           >
             <ServiceSlider />
           </motion.div>
+          
         </div>
       </div>
       <Bulb />

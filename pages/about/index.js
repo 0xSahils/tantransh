@@ -129,8 +129,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificient designs.
+            Trust me, <span className="text-accent">it works</span> on my machine!
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -139,10 +138,8 @@ const About = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae
-            blandit magna. Ut sed molestie justo. Vestibulum urna tortor,
-            sollicitudin ut faucibus quis, tempor eget nibh.dipiscing elit. Ut vitae
-            blandit magna. Ut sed molestie justo.
+            HackXLR8 is a National level hackathon,conducted by Robotics CLub of IET Lucknow in collaboration Incubation Center and E-Cell,IET Lucknow. With a prize pool of 1.05 Lakh, you'll get one to experiance the most engaging and fun coding ride. <br/>
+            <a href="www.googgle.com" color="blue" target="_blank" className="transition rounded-lg shadow-md cursor-pointer hover:text-accent">Register Now !</a>
           </motion.p>
           {/*counters*/}
           <motion.div
@@ -154,39 +151,39 @@ const About = () => {
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience*/}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="mb-2 text-2xl font-extrabold xl:text-4xl text-accent">
                   <CountUp start={0} end={800} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   No of Participating Students
                 </div>
-              </div>
+              </div> */}
               {/*clients*/}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="mb-2 text-2xl font-extrabold xl:text-4xl text-accent">
-                  <CountUp start={0} end={50} duration={5} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Teams Participating
+                  Teams 
                 </div>
               </div>
               {/*projects*/}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="mb-2 text-2xl font-extrabold xl:text-4xl text-accent">
-                  <CountUp start={0} end={120} duration={5} /> +
+                  <CountUp start={0} end={100} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Support Student Staff
+                  Participants
                 </div>
               </div>
               {/*awards*/}
               <div className="relative flex-1">
                 <div className="mb-2 text-2xl font-extrabold xl:text-4xl text-accent">
-                  <CountUp start={0} end={150} duration={5} /> +
+                  <CountUp start={0} end={100} duration={5} /> K
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Winning Awards
+                  Prize Pool
                 </div>
               </div>
             </div>
