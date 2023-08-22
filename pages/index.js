@@ -65,8 +65,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="max-w-sm mx-auto mb-10 xl:max-w-xl xl:mx-0 xl:mb-16"
           >
-            "You either die a bug or live long enough to become a feature" <br/>-A Random Developer
-            {/* Unleash your creativity and code your way to success at our hackathon, where ideas come alive in the digital realm! <br className='px-20' /> A Random Developer */}
+            You either die a bug or live long enough to become a feature <br/> A Random Developer
           </motion.p>
           {/* btn */}
           <div className="relative flex justify-center xl:hidden">
