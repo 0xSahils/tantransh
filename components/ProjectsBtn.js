@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //next link
 
-import Link from "next/Link";
+import Link from "next/link";
 
 // icons
 
@@ -15,7 +15,7 @@ const ProjectsBtn = () => {
       <Link href={'https://twitter.com/home ' } className='relative w-[185px] h-[185px] flex justify-center items-center 
        bg-circleStar bg-cover bg-center bg-no-repeat group'>
         <Image
-          src={'/Pbutton.png'}
+          src={'./Pbutton.png'}
           width={141}
           height={148}
           alt= ''
