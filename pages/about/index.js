@@ -90,12 +90,12 @@ import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
+  // console.log(index);
   return (
     <div className="h-full py-32 text-center bg-primary/30 xl:text-left">
       <Circles />
       {/*Avatar img*/}
-      <motion.div
+      <div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         whileInView={"show"}
@@ -103,27 +103,15 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar />
-      </motion.div>
+      </div>
       <div className="container flex flex-col items-center h-full mx-auto xl:flex-row gap-x-6">
         {/*text*/}
         <div className="flex flex-col justify-center flex-1">
-          <motion.h2
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="h2"
-          >
+          <h2 className="h2">
             Trust me, <span className="text-accent">it works</span> on my
             machine!
-          </motion.h2>
-          <motion.p
-            variants={fadeIn("right", 0.4)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0"
-          >
+          </h2>
+          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0">
             HackXLR8 is a National level hackathon,conducted by Robotics CLub of
             IET Lucknow in collaboration Incubation Center and E-Cell,IET
             Lucknow. With a prize pool of 1.05 Lakh, you will get one to
@@ -137,14 +125,14 @@ const About = () => {
                 Register Now!
               </a>
             </button>
-          </motion.p>
+          </p>
           {/*counters*/}
-          <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="hidden mx-auto mb-8 md:flex md:max-w-xl xl:max-w-none xl:mx-0"
+          <div
+          // variants={fadeIn("right", 0.6)}
+          // initial="hidden"
+          // whileInView={"show"}
+          // viewport={{ once: false, amount: 0.7 }}
+          // className="hidden mx-auto mb-8 md:flex md:max-w-xl xl:max-w-none xl:mx-0"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience*/}
@@ -184,16 +172,17 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         {/*info*/}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
-        >
+        > */}
+        <div>
           <div className="flex mx-auto mb-4 gap-x-4 xl:gap-x-8 xl:mx-0">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -236,7 +225,8 @@ const About = () => {
               );
             })}
           </div>
-        </motion.div>
+          {/* </motion.div> */}
+        </div>
       </div>
     </div>
   );
