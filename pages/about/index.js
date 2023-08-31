@@ -20,6 +20,7 @@ import {
 } from "react-icons/si";
 
 // about data
+
 export const aboutData = [
   {
     title: "skills",
@@ -27,7 +28,7 @@ export const aboutData = [
       {
         title: "Data Structures and ALgorithms",
         icons: [
-          <FaHtml5 /> ,
+          <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
@@ -55,23 +56,7 @@ export const aboutData = [
       },
     ],
   },
-  // {
-  //   title: "experience",
-  //   info: [
-  //     {
-  //       title: "UX/UI Designer - XYZ Company",
-  //       stage: "2012 - 2023",
-  //     },
-  //     {
-  //       title: "Web Developer - ABC Agency",
-  //       stage: "2010 - 2012",
-  //     },
-  //     {
-  //       title: "Intern - DEF Corporation",
-  //       stage: "2008 - 2010",
-  //     },
-  //   ],
-  // },
+
   {
     title: "credentials",
     info: [
@@ -129,7 +114,8 @@ const About = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="h2"
           >
-            Trust me, <span className="text-accent">it works</span> on my machine!
+            Trust me, <span className="text-accent">it works</span> on my
+            machine!
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -138,8 +124,19 @@ const About = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0"
           >
-            HackXLR8 is a National level hackathon,conducted by Robotics CLub of IET Lucknow in collaboration Incubation Center and E-Cell,IET Lucknow. With a prize pool of 1.05 Lakh, you will get one to experiance the most engaging and fun coding ride. <br/>
-            <a href="www.googgle.com" color="blue" target="_blank" className="transition rounded-lg shadow-md cursor-pointer hover:text-accent">Register Now !</a>
+            HackXLR8 is a National level hackathon,conducted by Robotics CLub of
+            IET Lucknow in collaboration Incubation Center and E-Cell,IET
+            Lucknow. With a prize pool of 1.05 Lakh, you will get one to
+            experiance the most engaging and fun coding ride. <br />
+            <button className="px-4 py-2 mt-3 text-white transition border rounded-lg shadow-md cursor-pointer bg-accent border-accent hover:bg-primary hover:border-accent hover:text-white">
+              <a
+                href="https://tailwindcss.com/docs/box-decoration-break#basic-usage"
+                target="_blank"
+              >
+                {" "}
+                Register Now!
+              </a>
+            </button>
           </motion.p>
           {/*counters*/}
           <motion.div
@@ -165,7 +162,7 @@ const About = () => {
                   <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Teams 
+                  Teams
                 </div>
               </div>
               {/*projects*/}
@@ -228,7 +225,11 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/*icons*/}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div key={itemIndex} className="text-2xl text-white">{icon}</div>;
+                      return (
+                        <div key={itemIndex} className="text-2xl text-white">
+                          {icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

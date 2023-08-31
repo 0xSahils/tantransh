@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply overflow-hidden leading-relaxed bg-secondary;
   }
   .page {
     @apply w-full h-screen overflow-hidden;
@@ -43,9 +43,33 @@
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply bg-transparent border outline-none focus:ring-1 focus:ring-accent border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+/* Add custom styles for the scroll bar */
+.custom-scrollbar {
+  overflow-y: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Adjust the width */
+  height: 5px; /* Adjust the height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2.5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
