@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="h-screen overflow-y-scroll bg-primary/60">
       <Head>
-        <title>Tantransh'24</title>
+        <title>Tantransh24</title>
         {/* <link rel="icon" href="/logo.png" /> */}
         <link href="/tanlogo.png" rel="icon" type="image/x-icon" />
         <style>
