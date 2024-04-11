@@ -92,7 +92,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   // console.log(index);
   return (
-    <div className="h-full py-32 text-center bg-primary/30 xl:text-left">
+    <div className="h-[180vh]  md:h-full py-32 text-center bg-primary/30 xl:text-left">
       <Circles />
       {/*Avatar img*/}
       <div
@@ -106,7 +106,7 @@ const About = () => {
       </div>
       <div className="container flex flex-col items-center h-full mx-auto xl:flex-row gap-x-6">
         {/*text*/}
-        <div className="flex flex-col justify-center flex-1">
+        <div className="flex flex-col justify-start flex-1">
           <h2 className="h2">
             Trust me, <span className="text-accent">it works</span> on my
             machine!

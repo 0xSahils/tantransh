@@ -19,14 +19,19 @@ const Header = () => {
       <div className="container mx-auto px-[25px] ">
         <div className="flex flex-col items-center justify-between py-8 lg:flex-row gap-y-6 ">
           {/* logo */}
-          <Link href={"/"}>
-            <Image 
-              src={"/Lomgo.png"}
-              width={220}
+          <Link
+            href={"/"}
+            className="flex flex-row items-center justify-center"
+          >
+            <Image
+              src={"/tanlogo.png"}
+              width={70}
               height={48}
               alt=""
               priority={true}
+              className=""
             />
+            <p className="font-semibold my-2 text-lg">TANTRANSH</p>
           </Link>
           {/* socials */}
           <Socials />
