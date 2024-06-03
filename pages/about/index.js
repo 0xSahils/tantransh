@@ -107,15 +107,18 @@ const About = () => {
       <div className="container flex flex-col items-center h-full mx-auto xl:flex-row gap-x-6">
         {/*text*/}
         <div className="flex flex-col justify-start flex-1">
-          <h2 className="h2">
-            Trust me, <span className="text-accent">it works</span> on my
-            machine!
+          <h2 className="text-5xl font-semibold">
+            Experience the Fusion where ,{" "}
+            <span className="text-accent">Technology</span> Meets Celebration
           </h2>
           <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl;px-0">
-            HackXLR8 is a National level hackathon,conducted by Robotics CLub of
-            IET Lucknow in collaboration Incubation Center and E-Cell,IET
-            Lucknow. With a prize pool of 1.05 Lakh, you will get one to
-            experiance the most engaging and fun coding ride. <br />
+            Get ready to kick off the year with Tantransh 2024, the ultimate
+            fest organized by the Computer Science and Engineering Department!
+            It &apos; s a party like no other, where all branches come together
+            for a fun-filled extravaganza. Join us for games, challenges, talent
+            searches, and more as we create lifelong memories and launch into a
+            new year of possibilities!
+            <br />
             <button className="px-4 py-2 mt-3 text-white transition border rounded-lg shadow-md cursor-pointer bg-accent border-accent hover:bg-primary hover:border-accent hover:text-white">
               <a
                 href="https://tailwindcss.com/docs/box-decoration-break#basic-usage"
@@ -175,57 +178,57 @@ const About = () => {
           </div>
         </div>
         {/*info*/}
-        {/* <motion.div
+        <div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
-        > */}
-        <div>
-          <div className="flex mx-auto mb-4 gap-x-4 xl:gap-x-8 xl:mx-0">
-            {aboutData.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className={` ${
-                    index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent  after:transition-all after:duration-300"
-                  }
+        >
+          <div>
+            {/* <div className="flex mx-auto mb-4 gap-x-4 xl:gap-x-8 xl:mx-0">
+              {aboutData.map((item, itemIndex) => {
+                return (
+                  <div
+                    key={itemIndex}
+                    className={` ${
+                      index === itemIndex &&
+                      "text-accent after:w-[100%] after:bg-accent  after:transition-all after:duration-300"
+                    }
                   cursor-pointer capitalize xl;text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
-                  {item.title}
-                </div>
-              );
-            })}
-          </div>
-          <div className="flex flex-col items-center py-2 xl:py-6 gap-y-2 xl:gap-y-4 xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className="flex flex-col items-center flex-1 md:flex-row max-w-max gap-x-2 text-white/60"
-                >
-                  {/*title*/}
-                  <div className="mb-2 font-light md:mb:0">{item.title}</div>
-                  <div className="hidden md:flex"></div>
-                  <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
-                    {/*icons*/}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return (
-                        <div key={itemIndex} className="text-2xl text-white">
-                          {icon}
-                        </div>
-                      );
-                    })}
+                    onClick={() => setIndex(itemIndex)}
+                  >
+                    {item.title}
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div> */}
+            <div className="flex flex-col items-center py-2 xl:py-6 gap-y-2 xl:gap-y-4 xl:items-start">
+              {aboutData[index].info.map((item, itemIndex) => {
+                return (
+                  <div
+                    key={itemIndex}
+                    className="flex flex-col items-center flex-1 md:flex-row max-w-max gap-x-2 text-white/60"
+                  >
+                    {/*title*/}
+                    <div className="mb-2 font-light md:mb:0">{item.title}</div>
+                    <div className="hidden md:flex"></div>
+                    <div>{item.stage}</div>
+                    <div className="flex gap-x-4">
+                      {/*icons*/}
+                      {item.icons?.map((icon, itemIndex) => {
+                        return (
+                          <div key={itemIndex} className="text-2xl text-white">
+                            {icon}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          {/* </motion.div> */}
         </div>
       </div>
     </div>
