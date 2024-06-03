@@ -54,7 +54,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="h1"
           >
-            Tantransh24
+            Tantransh &apos;24
             <br />
             <span className="text-4xl"> presented by</span>{" "}
             <span className="text-accent ">Kriti Society</span>
